@@ -1,0 +1,91 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	color: #FFFFFF;
+	background: url('back.jpg');
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	font-family: monospace;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 30px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+
+.innerwrap {
+	padding: 5px;
+	height: 100%;
+	width: 100%;
+}
+
+.outerwrap {
+	padding: 10px;
+	height: 95%;
+}
+
+#mainwrapper {
+	padding-top: 100px;
+	display: flex;
+	margin: auto;
+	width: 70%;
+	height: 800px;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+
+.box {
+	background: rgba(30,30,30,0.7);
+	border: solid #ffffff 1px;
+	height: 100%;
+	width: 100%;
+}
+
+#a1a {
+	height: 50%;
+	width: 50%;
+}
+
+#a2a {
+	height: 50%;
+	width: 50%;
+	font-size: 15px;
+}
+
+#a3a {
+	height: 50%;
+	width: 100%;
+}
+
+@keyframes blink {
+	0% {background-color: rgba(0,0,0,0);}
+	50% {background-color: rgba(0,0,0,0);}
+	51% {background-color: rgba(255,255,255,1);}
+	100% {background-color: rgba(255,255,255,1);}
+}
+
+#cursor {
+	width: 8px;
+	height: 15px;
+	animation-name: blink;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#console {
+	display: flex;
+}
