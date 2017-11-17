@@ -5,13 +5,13 @@
 	<meta charset=utf-8>
 	<link rel=stylesheet href="style.css">
 </head>
-<body>
+<body onload="writeNotes()">
 	<div id="mainwrapper">
 		<div id="a1a">
 			<div class="outerwrap">
 				<div class="box">
-					<div class="innerwrap flex">
-						[PLACEHOLDER]
+					<div class="innerwrap">
+						<textarea id="notepad"></textarea>
 					</div>
 				</div>
 			</div>
@@ -41,10 +41,12 @@
 						<a href="https://lainchan.jp">[LAINCHAN]</a>
 						<a href="https://arisu.pw">[ARISU.PW]</a>
 						<a href="https://kudasai.moe">[KUDASAI]</a>
+						<a onclick="writeCookie()">[SAVE NOTES]</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>

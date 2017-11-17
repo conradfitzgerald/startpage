@@ -89,3 +89,11 @@ a {
 #console {
 	display: flex;
 }
+
+#notepad {
+	width: 98%;
+	height: 97%;
+	background: none;
+	border: none;
+	color: #ffffff;
+}
